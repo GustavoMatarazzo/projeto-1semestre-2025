@@ -1,7 +1,6 @@
 # projeto-1semestre-2025
 git clone 
-git config
 
-–global user.name “seu nome” git config
+git config -–global user.name “seu nome” 
 
-–global user.email “seu email”
+git config -–global user.email “seu email”
