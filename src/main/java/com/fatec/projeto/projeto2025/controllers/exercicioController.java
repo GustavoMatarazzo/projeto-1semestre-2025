@@ -8,6 +8,7 @@ public class exercicioController {
     
     @GetMapping("")
     public String HelloWord(){
-        return "hello";
+        return "hello word 2"; 
+
     }
 }
