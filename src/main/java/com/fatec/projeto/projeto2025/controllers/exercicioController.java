@@ -36,21 +36,15 @@ public class exercicioController {
     }
 
     @GetMapping("/get-par-impar/{numero}")
-    public String RetornaParImpar(@PathVariable Integer numero){
-        try {
-            int num = Integer.parseInt(numero);
-    
-            if (num < 0) {
-                return "Número inválido";
-            }
-    
-            if (num % 2 == 0) {
-                return "O número " + num + " é par.";
-            } else {
-                return "O número " + num + " é ímpar.";
-            }
-        } catch (NumberFormatException e) {
+    public String RetornaParImpar(@PathVariable Integer numero) {
+        if (numero < 0) {
             return "Número inválido";
+        }
+
+        if (numero % 2 == 0) {
+            return "O número " + numero + " é par.";
+        } else {
+            return "O número " + numero + " é ímpar.";
         }
     }
 }
