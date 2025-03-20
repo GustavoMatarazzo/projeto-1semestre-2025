@@ -1,6 +1,4 @@
-
 package com.fatec.projeto.projeto2025.entities;
-
 
 public class Cliente {
     private Long id;
@@ -11,7 +9,7 @@ public class Cliente {
     // Construtores
     public Cliente() {}
 
-    public Cliente(Long id, String nome, int idade, String endereco) {
+    public Cliente(Long id, String nome, Integer idade, String endereco) {
         this.id = id;
         this.nome = nome;
         this.idade = idade;
@@ -37,10 +35,6 @@ public class Cliente {
 
     public Integer getIdade() {
         return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
     }
 
     public void setIdade(Integer idade) {
